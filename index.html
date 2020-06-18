@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/images/logo.svg" />
+
+  <title>Portal NewsApi</title>
+</head>
+
+<body>
+
+  <header id="main-header">
+    <div class="content">
+      <div class="logo" onclick="executaPesquisa(1)">
+        <img src="/images/logo.svg" alt="Portal NewsApi" />
+        <h1>Portal NewsApi</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li onclick="executaPesquisa(1)"> <a href="#"><img src="/images/brazil.svg" alt="Notícias Brasil" />Notícias
+              Brasil</a>
+          <li onclick="executaPesquisa(2)"> <a href="#"><img src=" /images/eua.svg" alt="Notícias EUA" />Notícias
+              EUA</a></li>
+          </li>
+          <li> <a href="https://github.com/davigdc/portal-newsapi-faculdade" target="blank"><img src="/images/about.svg"
+                alt="Sobre" />Sobre
+              Portal NewsApi</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrapper-content content">
+    <main>
+      <ul id="listNews" class="news">
+        <!-- <li>
+          <img
+            src="https://s2.glbimg.com/i3VMYSiYCgWuv-RZTYubvRlp4bY=/512x320/smart/e.glbimg.com/og/ed/f/original/2020/03/24/img_7229.jpg"
+            alt="">
+          <a href="#">
+            <div class="info">
+              <div class="cabecalho">
+                <h2>Coronavírus: o ritmo de contágio no Brasil, estado a estado - Época NEGÓCIOS</h2>
+                <span>01/01/2000 - Fonte da notícia</span>
+              </div>
+
+              <p>Avenida Paulista vazia no domingo, 22 de março, devido ao coronavírus (Foto: Roberto Parizotti/Fotos
+                publicas)\r\nSão Paulo, Rio de Janeiro, Ceará, Pará e Maranhão são os estados com o maior número de
+              </p>
+
+            </div>
+          </a>
+        </li> -->
+
+      </ul>
+    </main>
+
+    <aside class="categories">
+      <div class="title">
+        <img src="./images/teste.svg" alt="">
+        <strong>Categorias</strong>
+      </div>
+      <ul>
+        <li onclick="executaPesquisaCategoria(`business`)">
+          <a href="#">
+            <img src="./images/business.svg" alt="">
+            Negócios
+          </a>
+        </li>
+        <li onclick="executaPesquisaCategoria(`entertainment`)">
+          <a href="#">
+            <img src="./images/entertainment.svg" alt="">
+            Entreterimento
+          </a>
+        </li>
+        <li onclick="executaPesquisaCategoria(`general`)">
+          <a href="#">
+            <img src="./images/general.svg" alt="">
+            Geral
+          </a>
+        </li>
+        <li onclick="executaPesquisaCategoria(`health`)">
+          <a href="#">
+            <img src="./images/health.svg" alt="">
+            Saúde
+          </a>
+        </li>
+        <li onclick="executaPesquisaCategoria(`science`)">
+          <a href="#">
+            <img src="./images/science.svg" alt="">
+            Ciência
+          </a>
+        </li>
+        <li onclick="executaPesquisaCategoria(`sports`)">
+          <a href="#">
+            <img src="./images/sports.svg" alt="">
+            Esportes
+          </a>
+        </li>
+        <li onclick="executaPesquisaCategoria(`technology`)">
+          <a href="#">
+            <img src="./images/technology.svg" alt="">
+            Tecnologia
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
