@@ -150,11 +150,56 @@ div.wrapper-content ul.news li div.cabecalho h2 {
 
 div.wrapper-content aside.categories {
   width: 250px;
-  height: 370px;
+  height: 100%;
   flex-shrink: 0;
   margin-top: 10px;
   background: #fff;
   padding: 15px;
+}
+
+div.wrapper-content aside.categories div.search-input {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+div.wrapper-content aside.categories div.search-input input {
+  flex: 1;
+  height: 30px;
+  padding-left: 7px;
+}
+
+div.wrapper-content aside.categories div.search-input button {
+  width: 35px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+div.wrapper-content aside.categories div.search-input button img {
+  height: 15px;
+  width: 15px;
+}
+
+div.wrapper-content aside.categories div.searchs {
+  color: #1f2226;
+}
+
+div.wrapper-content aside.categories div.searchs p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div.wrapper-content aside.categories div.searchs ul {
+  list-style: circle;
+  margin-bottom: 15px;
+}
+
+div.wrapper-content aside.categories div.searchs ul li {
+  margin-top: 5px;
+  cursor: pointer;
 }
 
 div.wrapper-content aside.categories div.title {
@@ -162,12 +207,12 @@ div.wrapper-content aside.categories div.title {
   display: flex;
   align-items: center;
   color: #1f2226;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 div.wrapper-content aside.categories div.title img {
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   margin-right: 10px;
 }
 

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="./images/logo.svg" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
   <title>Portal NewsApi</title>
 </head>
@@ -36,30 +38,25 @@
 
   <div class="wrapper-content content">
     <main>
-      <ul id="listNews" class="news">
-        <!-- <li>
-          <img
-            src="https://s2.glbimg.com/i3VMYSiYCgWuv-RZTYubvRlp4bY=/512x320/smart/e.glbimg.com/og/ed/f/original/2020/03/24/img_7229.jpg"
-            alt="">
-          <a href="#">
-            <div class="info">
-              <div class="cabecalho">
-                <h2>Coronavírus: o ritmo de contágio no Brasil, estado a estado - Época NEGÓCIOS</h2>
-                <span>01/01/2000 - Fonte da notícia</span>
-              </div>
-
-              <p>Avenida Paulista vazia no domingo, 22 de março, devido ao coronavírus (Foto: Roberto Parizotti/Fotos
-                publicas)\r\nSão Paulo, Rio de Janeiro, Ceará, Pará e Maranhão são os estados com o maior número de
-              </p>
-
-            </div>
-          </a>
-        </li> -->
-
-      </ul>
+      <ul id="listNews" class="news"></ul>
     </main>
 
     <aside class="categories">
+
+      <div class="search-input">
+        <input id="textSearch" type="search" placeholder="Pesquisar">
+        <button id="btn-pesquisa" onclick="search()">
+          <img src="images/lupa.png" alt="Pesquisa">
+        </button>
+      </div>
+
+      <div class="searchs">
+        <p>Pesquisas salvas:</p>
+        <ul id="savedSearchs">
+          <!-- <li onclick="">Coronga</li> -->
+        </ul>
+      </div>
+
       <div class="title">
         <img src="./images/teste.svg" alt="">
         <strong>Categorias</strong>
